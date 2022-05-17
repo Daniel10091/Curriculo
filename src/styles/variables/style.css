@@ -1,0 +1,70 @@
+:root {
+  --White: #FFFFFF;
+  --Cultured: #F8F8F8;
+  --Cultured-02: #F3F3F3;
+  --Gainsboro: #DBDBDB;
+  --Silver: #C5C5C5;
+  --GrayX11Gray: #B7B7B7;
+  --SlateGray: #677483;
+  --Onyx: #3D3F45;
+  --Black: #000000;
+  --EerieBlack: #121316;
+  --EerieBlack-02: #17181C;
+  --EerieBlack-03: #1C1E22;
+  --Xiketic: #070011;
+  --DarkPurple: #0F0023;
+  --RussianViolet: #170036;
+  --PersianIndigo: #260058;
+  --EletricViolet: #8C00FF;
+  --EletricPurple: #B300FF;
+  --RoyalPurple: #7F52BA;
+  --MediumSlateBlue: #9075FF;
+  --RosePink: #FF6EF5;
+  --DeepCerise: #DC2B86;
+  --Byzantine: #B935A8;
+  --DarkOrchid: #9441D2;
+  --StateBlue: #7A5AE1;
+  --BlueCrayola: #607CE7;
+  --DodgerBlue: #4B9BEC;
+  --BlueJeans: #40AAEE;
+  --Capri: #36B9F1;
+  --BlueRYB: #384BF2;
+  --MiddleBlue: #81D3E5;
+  --RadicalRed: #FF2567;
+  --RedPigment: #EF1D1D;
+  --CGRed: #E23A35;
+  --TitaniumYellow: #EDE400;
+  --Melachite: #60DF60;
+
+  --LightOpacicy-01: rgba(255, 255, 255, 0.1);
+  --LightOpacicy-08: rgba(255, 255, 255, 0.5);
+  --LightOpacicy-09: rgba(255, 255, 255, 0.9);
+
+  --DarkOpacicy-01: rgba(0, 0, 0, 0.1);
+  --DarkOpacicy-02: rgba(0, 0, 0, 0.2);
+  --DarkOpacicy-03: rgba(0, 0, 0, 0.3);
+  --DarkOpacicy-04: rgba(0, 0, 0, 0.4);
+  
+  --color-mirage: #171c24;
+  --color-shark: #272a2f;
+  --color-oslo-gray: #868b95;
+  --color-pale-sky: #697384;
+  --color-melrose: #aec6ff;
+  --color-melrose-dark: #4c5873;
+  --color-gull-gray: #a1aab8;
+  --color-bright-gray: #363e49;
+  --color-bright-gray-light: #3d4650;
+  --color-heather: #bec7d5;
+  --color-catskill-white: #ecf0f6;
+  --color-dodger-blue: #3880ff;
+  --color-dodger-blue-light: #5a96ff;
+  --color-periwinkle: #c6dbff;
+  --color-cadet-blue: #abb2bf;
+  --color-white-lilac: #f8f8fc;
+}
+
+body.light-theme {
+  --EerieBlack: #F3F3F3;
+  --White: #000000;
+  --LightOpacicy-01: rgba(0, 0, 0, 0.1);
+}

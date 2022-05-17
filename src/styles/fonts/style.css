@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700;900&display=swap');
+
+:root {
+  --Poppins: 'Poppins', sans-serif;
+  --NotoSans: 'Noto Sans', sans-serif;
+  --Lato: 'Lato', sans-serif;
+}

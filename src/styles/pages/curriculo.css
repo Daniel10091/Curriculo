@@ -1,0 +1,410 @@
+.curriculo_page_content {
+  width: 860px;
+  height: auto;
+  padding-block: 26px;
+  background: var(--LightOpacicy-09);
+  -webkit-box-shadow: 0 2px 10px var(--DarkOpacicy-02);
+          box-shadow: 0 2px 10px var(--DarkOpacicy-02);
+  border: 1px solid var(--LightOpacicy-09);
+  border-radius: 15px;
+}
+
+@media only screen and (max-width: 900px) {
+  .curriculo_page_content {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 900px) and (max-width: 570px) {
+  .curriculo_page_content {
+    width: 95%;
+    padding-block: 16px;
+  }
+}
+
+.curriculo_page_content .person_info_block {
+  position: relative;
+  width: 100%;
+  height: 270px;
+}
+
+@media only screen and (max-width: 800px) {
+  .curriculo_page_content .person_info_block {
+    height: 240px;
+  }
+}
+
+@media only screen and (max-width: 800px) and (max-width: 570px) {
+  .curriculo_page_content .person_info_block {
+    height: 170px;
+  }
+}
+
+@media only screen and (max-width: 800px) and (max-width: 570px) and (max-width: 430px) {
+  .curriculo_page_content .person_info_block {
+    height: 150px;
+  }
+}
+
+.curriculo_page_content .person_info_block .person_info_content {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 60px;
+  padding-inline: 50px;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 800px) {
+  .curriculo_page_content .person_info_block .person_info_content {
+    gap: 40px;
+    padding-inline: 36px;
+  }
+}
+
+@media only screen and (max-width: 800px) and (max-width: 570px) {
+  .curriculo_page_content .person_info_block .person_info_content {
+    gap: 30px;
+    padding-inline: 26px;
+  }
+}
+
+@media only screen and (max-width: 800px) and (max-width: 570px) and (max-width: 430px) {
+  .curriculo_page_content .person_info_block .person_info_content {
+    gap: 26px;
+    padding-inline: 20px;
+  }
+}
+
+.curriculo_page_content .person_info_block .person_info_content img {
+  position: relative;
+  width: 170px;
+  height: 170px;
+  background: -webkit-gradient(linear, left top, right top, from(var(--BlueJeans)), to(var(--StateBlue)));
+  background: linear-gradient(90deg, var(--BlueJeans) 0%, var(--StateBlue) 100%);
+  border-radius: 50%;
+  image-rendering: optimizeQuality;
+}
+
+@media only screen and (max-width: 800px) {
+  .curriculo_page_content .person_info_block .person_info_content img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media only screen and (max-width: 800px) and (max-width: 570px) {
+  .curriculo_page_content .person_info_block .person_info_content img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media only screen and (max-width: 800px) and (max-width: 570px) and (max-width: 430px) {
+  .curriculo_page_content .person_info_block .person_info_content img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.curriculo_page_content .person_info_block .person_info_content .text {
+  line-height: 44px;
+}
+
+.curriculo_page_content .person_info_block .person_info_content .text h1 {
+  font-family: var(--Lato);
+  font-size: 38px;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: var(--White);
+}
+
+.curriculo_page_content .person_info_block .person_info_content .text h2 {
+  font-family: var(--Poppins);
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: var(--White);
+}
+
+@media only screen and (max-width: 800px) {
+  .curriculo_page_content .person_info_block .person_info_content .text {
+    line-height: 36px;
+  }
+  .curriculo_page_content .person_info_block .person_info_content .text h1 {
+    font-size: 32px;
+  }
+  .curriculo_page_content .person_info_block .person_info_content .text h2 {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 800px) and (max-width: 620px) {
+  .curriculo_page_content .person_info_block .person_info_content .text {
+    line-height: 32px;
+  }
+  .curriculo_page_content .person_info_block .person_info_content .text h1 {
+    font-size: 28px;
+  }
+  .curriculo_page_content .person_info_block .person_info_content .text h2 {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 800px) and (max-width: 620px) and (max-width: 570px) {
+  .curriculo_page_content .person_info_block .person_info_content .text {
+    line-height: 30px;
+  }
+  .curriculo_page_content .person_info_block .person_info_content .text h1 {
+    font-size: 22px;
+  }
+  .curriculo_page_content .person_info_block .person_info_content .text h2 {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 800px) and (max-width: 620px) and (max-width: 570px) and (max-width: 430px) {
+  .curriculo_page_content .person_info_block .person_info_content .text {
+    line-height: 26px;
+  }
+  .curriculo_page_content .person_info_block .person_info_content .text h1 {
+    font-size: 18px;
+  }
+  .curriculo_page_content .person_info_block .person_info_content .text h2 {
+    font-size: 12px;
+  }
+}
+
+.curriculo_page_content .curriculo_content {
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 280px 1fr;
+      grid-template-columns: 280px 1fr;
+}
+
+@media only screen and (max-width: 800px) {
+  .curriculo_page_content .curriculo_content {
+    -ms-grid-columns: 220px 1fr;
+        grid-template-columns: 220px 1fr;
+  }
+}
+
+@media only screen and (max-width: 800px) and (max-width: 570px) {
+  .curriculo_page_content .curriculo_content {
+    -ms-grid-columns: 180px 1fr;
+        grid-template-columns: 180px 1fr;
+  }
+}
+
+@media only screen and (max-width: 800px) and (max-width: 570px) and (max-width: 430px) {
+  .curriculo_page_content .curriculo_content {
+    -ms-grid-columns: 146px 1fr;
+        grid-template-columns: 146px 1fr;
+  }
+}
+
+.curriculo_page_content .curriculo_content .column:last-child {
+  background: rgba(103, 116, 131, 0.102);
+  border-radius: 0 0 0 13px;
+}
+
+.curriculo_page_content .curriculo_content .column > div {
+  padding-inline: 50px;
+  padding-block: 40px 10px;
+}
+
+@media only screen and (max-width: 800px) {
+  .curriculo_page_content .curriculo_content .column > div {
+    padding-inline: 30px;
+    padding-block: 20px 10px;
+  }
+}
+
+@media only screen and (max-width: 800px) and (max-width: 570px) {
+  .curriculo_page_content .curriculo_content .column > div {
+    padding-inline: 18px;
+    padding-block: 12px 6px;
+  }
+}
+
+.curriculo_page_content .curriculo_content .column > div h3 {
+  font-family: var(--Poppins);
+  font-size: 16px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: var(--SlateGray);
+}
+
+@media only screen and (max-width: 800px) {
+  .curriculo_page_content .curriculo_content .column > div h3 {
+    font-size: 15px;
+    letter-spacing: 5px;
+  }
+}
+
+@media only screen and (max-width: 800px) and (max-width: 570px) {
+  .curriculo_page_content .curriculo_content .column > div h3 {
+    font-size: 13px;
+    letter-spacing: 4px;
+  }
+}
+
+@media only screen and (max-width: 800px) and (max-width: 570px) and (max-width: 430px) {
+  .curriculo_page_content .curriculo_content .column > div h3 {
+    font-size: 10px;
+  }
+}
+
+.curriculo_page_content .curriculo_content .column > div span.bar {
+  display: block;
+  width: 70px;
+  height: 7px;
+  margin-block: 20px 15px;
+  background: var(--MediumSlateBlue);
+  border-radius: 7px;
+}
+
+@media only screen and (max-width: 800px) {
+  .curriculo_page_content .curriculo_content .column > div span.bar {
+    width: 60px;
+    height: 6px;
+  }
+}
+
+@media only screen and (max-width: 800px) and (max-width: 570px) {
+  .curriculo_page_content .curriculo_content .column > div span.bar {
+    width: 50px;
+    height: 5px;
+    margin-block: 15px 10px;
+  }
+}
+
+@media only screen and (max-width: 800px) and (max-width: 570px) and (max-width: 430px) {
+  .curriculo_page_content .curriculo_content .column > div span.bar {
+    width: 40px;
+    height: 4px;
+    margin-block: 10px 5px;
+  }
+}
+
+.curriculo_page_content .curriculo_content .column > div p, .curriculo_page_content .curriculo_content .column > div a {
+  font-size: 14px;
+  color: var(--Onyx);
+}
+
+@media only screen and (max-width: 800px) {
+  .curriculo_page_content .curriculo_content .column > div p, .curriculo_page_content .curriculo_content .column > div a {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 800px) and (max-width: 570px) {
+  .curriculo_page_content .curriculo_content .column > div p, .curriculo_page_content .curriculo_content .column > div a {
+    font-size: 11px;
+  }
+}
+
+@media only screen and (max-width: 800px) and (max-width: 570px) and (max-width: 430px) {
+  .curriculo_page_content .curriculo_content .column > div p, .curriculo_page_content .curriculo_content .column > div a {
+    font-size: 9px;
+  }
+}
+
+.curriculo_page_content .curriculo_content .column .personal_profile h3 {
+  white-space: wrap;
+}
+
+.curriculo_page_content .curriculo_content .column .skills {
+  height: 313px;
+}
+
+@media only screen and (max-width: 800px) {
+  .curriculo_page_content .curriculo_content .column .skills {
+    height: auto;
+  }
+}
+
+.curriculo_page_content .curriculo_content .column .skills span.bar, .curriculo_page_content .curriculo_content .column .experience span.bar {
+  margin-block: 45px 15px;
+}
+
+@media only screen and (max-width: 570px) {
+  .curriculo_page_content .curriculo_content .column .skills span.bar, .curriculo_page_content .curriculo_content .column .experience span.bar {
+    margin-block: 35px 15px;
+  }
+}
+
+@media only screen and (max-width: 570px) and (max-width: 430px) {
+  .curriculo_page_content .curriculo_content .column .skills span.bar, .curriculo_page_content .curriculo_content .column .experience span.bar {
+    margin-block: 28px 10px;
+  }
+}
+
+.curriculo_page_content .curriculo_content .column .contact div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 17px 1fr;
+      grid-template-columns: 17px 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  margin-bottom: 5px;
+}
+
+.curriculo_page_content .curriculo_content .column .contact div ion-icon {
+  font-size: 17px;
+  color: var(--Onyx);
+}
+
+.curriculo_page_content .curriculo_content .column .contact div p, .curriculo_page_content .curriculo_content .column .contact div a {
+  word-break: break-all;
+}
+
+@media only screen and (max-width: 800px) {
+  .curriculo_page_content .curriculo_content .column .contact div {
+    -ms-grid-columns: 15px 1fr;
+        grid-template-columns: 15px 1fr;
+    gap: 10px;
+  }
+  .curriculo_page_content .curriculo_content .column .contact div ion-icon {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 800px) and (max-width: 570px) {
+  .curriculo_page_content .curriculo_content .column .contact div {
+    -ms-grid-columns: 13px 1fr;
+        grid-template-columns: 13px 1fr;
+  }
+  .curriculo_page_content .curriculo_content .column .contact div ion-icon {
+    font-size: 13px;
+  }
+}
+
+.curriculo_page_content .curriculo_content .column .experience p {
+  width: 380px;
+}
+
+@media only screen and (max-width: 800px) {
+  .curriculo_page_content .curriculo_content .column .experience p {
+    width: auto;
+  }
+}
+/*# sourceMappingURL=curriculo.css.map */

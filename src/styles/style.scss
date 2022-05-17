@@ -1,0 +1,222 @@
+.form_box {
+  width: 860px;
+  height: auto;
+  padding-inline: 50px;
+  padding-block: 26px 0;
+  // background: var(--White);
+  background: var(--LightOpacicy-09);
+  box-shadow: 0 2px 10px var(--DarkOpacicy-02);
+  border: 1px solid var(--LightOpacicy-09);
+  border-radius: 15px;
+  @media only screen and (max-width: 900px) {
+    width: 90%;
+    padding-inline: 30px;
+  }
+  .error-text {
+    width: 100%;
+    display: none;
+    padding-inline: 10px;
+    font-size: 15px;
+    color: var(--White);
+    background: var(--RedPigment);
+    border-radius: 6px;
+  }
+  .form_title {
+    text-align: center;
+    h1 {font-family: var(--Poppins); font-size: 24px; font-weight: bold;}
+    h2 {font-family: var(--Poppins); font-size: 17px; color: var(--Onyx);}
+    @media only screen and (max-width: 780px) {
+      h1 {font-size: 20px;}
+      h2 {font-size: 14px;}
+      @media only screen and (max-width: 600px) {
+        h1 {font-size: 18px;}
+        h2 {font-size: 13px;}
+      }
+    }
+  }
+  .form_content_row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 50px;
+    margin-top: 5px;
+    &:first-child {margin-top: 20px;}
+    &.form_content_single-row {grid-template-columns: 1fr;}
+    &.form_content_submit {grid-template-columns: 1fr; padding-block: 40px;}
+    @media only screen and (max-width: 900px) {
+      gap: 30px;
+      @media only screen and (max-width: 670px) {
+        grid-template-columns: 1fr;
+        gap: 4px;
+      }
+    }
+    .form_content_column {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      b {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-family: var(--Lato);
+        font-size: 15px;
+        color: var(--SlateGray);
+        will-change: contents;
+        span {font-size: 13px; font-weight: normal; color: inherit;}
+        @media only screen and (max-width: 780px) {
+          font-size: 14px;
+          span {font-size: 10px;}
+        }
+      }
+      input:not(#file), textarea {
+        width: auto;
+        margin-top: 6px;
+        padding-inline: 10px;
+        color: var(--Onyx);
+        background: transparent;
+        border: 1px solid var(--SlateGray);
+        border-radius: 6px;
+        will-change: contents;
+        &:focus, &.is-valid {border: 2px solid var(--MediumSlateBlue);}
+        &.sugestions {border-bottom: 0; border-radius: 6px 6px 0 0;}
+      }
+      input {height: 34px;}
+      textarea {height: 70px; padding-block: 8px; resize: none;}
+      .autocom-box {
+        position: absolute;
+        top: 56px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-inline: 5px;
+        padding-block: 10px 4px;
+        background: var(--Cultured);
+        border-radius: 0 0 6px 6px;
+        border: 1px solid var(--SlateGray);
+        border-top: 0;
+        z-index: 1;
+        visibility: hidden;
+        will-change: contents;
+        li {
+          width: 100%;
+          height: 30px;
+          display: flex;
+          align-items: center;
+          padding-inline: 5px;
+          font-size: 14px;
+          border-radius: 4px;
+          cursor: pointer;
+          will-change: contents;
+          &:hover {color: var(--White); background: var(--MediumSlateBlue);}
+        }
+      }
+      .autocom-box.is-show {visibility: visible;}
+      input:focus ~ .autocom-box {border-width: 2px; border-color: var(--MediumSlateBlue);}
+      ion-icon {
+        position: absolute;
+        top: 56%;
+        right: 10px;
+        transform: translate(0, -56%);
+        font-size: 20px;
+        color: var(--RedPigment);
+        pointer-events: none;
+        opacity: 0;
+        will-change: contents;
+      }
+      & > span {
+        font-size: 12px;
+        font-weight: bold;
+        color: var(--RedPigment);
+        pointer-events: none;
+        opacity: 0;
+        will-change: contents;
+        @media only screen and (max-width: 780px) {
+          font-size: 10px;
+        }
+      }
+      &.alert-undefined {
+        b {color: var(--RedPigment);}
+        input:not(#file), textarea {border-color: var(--RedPigment);}
+        ion-icon, span {opacity: 1; transition: all 0.2s ease-out;}
+      }
+      button {
+        align-self: center;
+        width: 180px;
+        height: 40px;
+        font-size: 16px;
+        font-weight: bold;
+        color: var(--White);
+        letter-spacing: 0.5px;
+        background: var(--MediumSlateBlue);
+        border: 2px solid var(--MediumSlateBlue);
+        border-radius: 6px;
+        cursor: pointer;
+        will-change: contents;
+        transition: all 0.2s ease-out;
+        &:hover {color: var(--Onyx); background: transparent;}
+      }
+      &.form_content_column-file {
+        input {display: none;}
+        .file_content {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          label {
+            padding-inline: 30px;
+            padding-block: 7px;
+            white-space: nowrap;
+            font-size: 16px;
+            color: var(--White);
+            background: var(--SlateGray);
+            border-radius: 6px;
+            cursor: pointer;
+            will-change: contents;
+            @media only screen and (max-width: 780px) {
+              padding-block: 9px;
+              font-size: 14px;
+            }
+          }
+          img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            visibility: hidden;
+            will-change: contents;
+            &.is-visible {visibility: visible;}
+          }
+        }
+        &.alert-undefined .file_content label {background: var(--RedPigment);}
+      }
+    }
+  }
+}
+
+@mixin animate ($animation, $duration, $method, $times) {
+  animation: $animation $duration $method $times;
+}
+
+@mixin keyframes ($name) {
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+.form_content_column.alert-undefined input,
+.form_content_column.alert-undefined textarea,
+.form_content_column.alert-undefined label {
+  @include keyframes(shake) {
+    25% {transform: translateX(4px);}
+    50% {transform: translateX(-4px);}
+    75% {transform: translateX(4px);}
+  }
+  @include animate(shake, 300ms, ease, 0s);
+}
+
+.form_content_column.alert-undefined ion-icon {
+  @include keyframes(pulse) {
+    25% {transform: translate(0, -56%) scale(1.1);}
+    50% {transform: translate(0, -56%) scale(0.9);}
+    75% {transform: translate(0, -56%) scale(1.1);}
+  }
+  @include animate(pulse, 300ms, ease, 0s);
+}
